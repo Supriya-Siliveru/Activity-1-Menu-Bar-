@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu-Bar Activity</title>
+</head>
+<style>
+    .menu-text{
+        display: flex;
+
+    }
+    .menu-bar {
+        display: flex;
+        width: 100%;
+        height: 13vh;
+        background-color: #8f6d5d;
+        border-radius: 50px;
+    }
+    .menu-bar img{
+        margin-left:4vw ;
+    }
+
+    .menu-text a {
+        text-decoration: none;
+        font-size: 14px;
+        padding-left: 40px;
+        color:rgb(244, 242, 241);
+        font-weight: bold;
+    }
+    .menu-text a:hover{
+        color:rgb(196, 187, 175);
+        font-size:16px ;
+
+    }
+    .menu-text ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1vh;
+
+    }
+
+    .menu-text ul li {
+        font-family: Arial;
+        color: #28517f;
+        list-style: none;
+    }
+
+    .menu-text ul li select {
+        margin-left: 30px;
+        border: none;
+        color: rgb(244, 242, 241);
+        background-color: #8f6d5d;
+        font-weight: bold;
+        width: 17vw;
+
+    }
+    .shop-products{
+        width: 18vw;
+        height: 7vh;
+        background-color: bisque;
+        border: 1.5px solid #5c3106;
+        border-radius: 5px;
+        margin-left: 7vw;
+    }
+    .search-menubar-btn{
+        width: 8vw;
+        margin-left: 1.5vw;
+        height: 6vh;
+        background-color: bisque;
+        color: brown;
+        border: none;
+        border-radius: 30px;
+    }
+</style>
+<body>
+    <div class="menu-bar">
+        <img src="https://marketplace.canva.com/EAFIKgORIzM/1/0/1600w/canva-brown-%26-beige-aesthetic-minimalist-font-initials-logo-fjKzHUaOUms.jpg" alt="" width="80px" height="70vh">
+        <div class="menu-text">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><select name=" " id="">
+                        <option value="#">PRODUCT CLASSIFICATIONS</option>
+                        <option value="#">Skin Products</option>
+                        <option value="#">Hair Products</option>
+                        <option value="#">Skin & Hair Treatments</option>
+                    </select></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li>
+                    <form class="search-button" role="search">
+                        <input class="shop-products" type="search" placeholder="Shop Products Here" aria-label="Search">
+                        <button class="search-menubar-btn" type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>
